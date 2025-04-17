@@ -28,14 +28,13 @@ jobs:
         run: |
           pyinstaller --noconfirm --clean --onefile Madmen_AutoLogin_v4.py
 
-      # Add debug step before upload
-      - name: Debug Action Cache
-        run: |
-    echo "Clearing GitHub Actions Runner cache to avoid corrupted dependencies"
-    gh cache clear
-
-- name: 📤 Upload Compiled EXE
-  uses: actions/upload-artifact@v3
-  with:
-    name: Madmen_Login_Hack_EXE
-    path: dist/Madmen_AutoLogin_v4.exe
+      - name: 📤 Upload Compiled EXE
+        uses: actions/upload-artifact@v4.6.2
+        with:
+          name: Madmen_Login_Hack_EXE                      # Artifact name in GitHub UI
+          path: dist/Madmen_AutoLogin_v4.exe               # Built executable path
+          if-no-files-found: error                         # Fail if EXE missing
+          retention-days: 30                               # Keep artifact for 30 days
+          compression-level: 6                             # Balanced speed/size
+          overwrite: true                                  # Replace if already exists
+          include-hidden-files: false                      # Skip dotfiles and hidden junk
