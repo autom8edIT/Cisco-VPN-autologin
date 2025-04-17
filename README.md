@@ -100,7 +100,7 @@ GitHub: [@ArcticOverclockers](https://github.com/ArcticOverclockers)
 - Logging dashboard with stats
 - Self-update system
 - Full integration into Madmen X Platform
-
+- Browser extension that identify any TOTP website and automatically insert the MFA code
 ---
 
 ## 🔥 Madmen Motto
