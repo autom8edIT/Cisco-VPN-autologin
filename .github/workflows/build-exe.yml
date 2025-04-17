@@ -31,11 +31,11 @@ jobs:
       # Add debug step before upload
       - name: Debug Action Cache
         run: |
-          echo "Checking cache for actions/upload-artifact"
-          echo "Clearing cache if needed"
+    echo "Clearing GitHub Actions Runner cache to avoid corrupted dependencies"
+    gh cache clear
 
-      - name: 📤 Upload Compiled EXE
-        uses: actions/upload-artifact@v3
-        with:
-          name: Madmen_Login_Hack_EXE
-          path: dist/Madmen_AutoLogin_v4.exe
+- name: 📤 Upload Compiled EXE
+  uses: actions/upload-artifact@v3
+  with:
+    name: Madmen_Login_Hack_EXE
+    path: dist/Madmen_AutoLogin_v4.exe
