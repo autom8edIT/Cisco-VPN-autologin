@@ -18,7 +18,8 @@ Welcome to **Madmen VPN Auto-Login**, your new digital mercenary against Cisco's
 
 ---
 
-If you use Google Authenticator you can use this super sick tool to get ahold of your secret key for any account. Mad props, tried to make the same tool myself then found this and realized why invent the wheel again?!
+If you use <a href="url">Google Authenticator</a> you can use this super sick tool to get ahold of your secret key for any account.
+Mad props, tried to make the same tool myself then found this gem by accident and realized there's no point in inventing the wheel again!
 **https://github.com/krissrex/google-authenticator-exporter**
 
 ## 🚀 Quick Setup
