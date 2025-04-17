@@ -18,6 +18,9 @@ Welcome to **Madmen VPN Auto-Login**, your new digital mercenary against Cisco's
 
 ---
 
+If you use Google Authenticator you can use this super sick tool to get ahold of your secret key for any account. Mad props, tried to make the same tool myself then found this and realized why invent the wheel again?!
+**https://github.com/krissrex/google-authenticator-exporter**
+
 ## 🚀 Quick Setup
 
 ### 1. Clone the Repo
@@ -57,7 +60,7 @@ Every action, every click, perfectly timed. No lag. No fail.
 
 ## 🌪️ Why It's Madmen
 
-- Built by **Joel Larsson**, also known as **The Machine** — a force of nature in IT and overclocking.
+- Built by **The Machine** — a force of nature in IT and overclocking.
 - Designed to make *daily annoyances vanish* while flexing Python, pywinauto, and automation skills.
 - This is part of a **larger Madmen Tools ecosystem**, evolving into a full-blown X-for-Windows power app.
 - Pure violence against UX friction.
@@ -89,7 +92,7 @@ This tool is for legit use only — don't use it to bypass corporate security un
 ---
 
 ## 🧠 Author
-**Joel Larsson / Arctic Overclockers**  
+**The Machine / Arctic Overclockers**  
 GitHub: [@ArcticOverclockers](https://github.com/ArcticOverclockers)  
 "I didn't choose violence. Violence chose me."
 
