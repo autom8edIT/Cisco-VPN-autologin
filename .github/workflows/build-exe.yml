@@ -3,7 +3,7 @@ name: 💻 Build EXE on Push
 on:
   push:
     branches:
-      - main
+      - main  # 🔁 Only build when code is pushed to main
 
 jobs:
   build:
@@ -29,7 +29,7 @@ jobs:
           pyinstaller --noconfirm --clean --onefile Madmen_AutoLogin_v4.py
 
       - name: 📤 Upload Compiled EXE
-        uses: actions/upload-artifact@v3.1.3  # ✅ Fully qualified version here
+        uses: actions/upload-artifact@9f14f914ab6478da1fdf9f235d56b0daaf527b21  # 👈 SHA from v3.1.3 release
         with:
-          name: Madmen_Login_Hack_EXE         # 🔖 Artifact name shown in GitHub UI
-          path: dist/Madmen_AutoLogin_v4.exe  # 📍 Path to the compiled .exe file
+          name: Madmen_Login_Hack_EXE
+          path: dist/Madmen_AutoLogin_v4.exe
