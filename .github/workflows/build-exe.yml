@@ -28,6 +28,12 @@ jobs:
         run: |
           pyinstaller --noconfirm --clean --onefile Madmen_AutoLogin_v4.py
 
+      # Add debug step before upload
+      - name: Debug Action Cache
+        run: |
+          echo "Checking cache for actions/upload-artifact"
+          echo "Clearing cache if needed"
+
       - name: 📤 Upload Compiled EXE
         uses: actions/upload-artifact@v3
         with:
