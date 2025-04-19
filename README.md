@@ -50,11 +50,6 @@ LOG_PATH=C:\Tools\Madmen\Logs\vpn_auto_login.log
 
 ## 🧠 How It Works
 
-1. `acwebhelper_watcher.exe` monitors for the VPN login window
-2. It injects your username/password like a ghost in the shell
-3. It spawns `totp.py`, gets your MFA token, injects that too
-4. It hits the final login button like a silent assassin
-
 Every action, every click, perfectly timed. No lag. No fail.
 
 ---
