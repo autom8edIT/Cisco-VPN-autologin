@@ -1,4 +1,4 @@
-# madmen_env_loader.py
+# autom8ed_env_loader.py
 from dotenv import load_dotenv
 import os
 

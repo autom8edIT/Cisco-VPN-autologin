@@ -1,8 +1,8 @@
-# 💣 Madmen VPN Auto-Login
+# autom8ed VPN Auto-Login
 
 **"One script to log them all. One script to bind them."**
 
-Welcome to **Madmen VPN Auto-Login**, your new digital mercenary against Cisco's login bloat. Tired of logging in manually like it's 2007? This is your fully automated, keypress-simulating, token-smuggling, rage-fueled revenge on corporate UX.
+Welcome to **autom8ed VPN Auto-Login**, your new digital mercenary against Cisco's login bloat. Tired of logging in manually like it's 2007? This is your fully automated, keypress-simulating, token-smuggling, rage-fueled revenge on corporate UX.
 
 ---
 
@@ -26,13 +26,14 @@ Mad props, tried to make the same tool myself then found this gem by accident an
 
 ### 1. Clone the Repo
 ```bash
-git clone https://github.com/ArcticOverclockers/madmen-vpn-autologin.git
-cd madmen-vpn-autologin
+git clone git@github.com:autom8edIT/csc-autologin.git
+cd csc-autologin
 ```
 
 ### 2. Install Requirements
 ```bash
 pip install -r requirements.txt
+# Optionally used togehter with a local Flask server instead of fetching creds from a file on the disk.
 ```
 
 ### 3. Create a `.env` File
@@ -41,19 +42,14 @@ In the root folder, add your creds/secrets:
 VPN_USERNAME=your_username
 VPN_PASSWORD=your_password
 TOTP_SECRET=your_base32_totp_secret
-TOTP_SCRIPT_PATH=C:\Tools\Madmen\Bin\totp.py
-LOG_PATH=C:\Tools\Madmen\Logs\vpn_auto_login.log
+TOTP_SCRIPT_PATH=C:\Tools\autom8ed\Bin\totp.py
+LOG_PATH=C:\Tools\autom8ed\Logs\vpn_auto_login.log
 ```
 > 🔐 **Pro Tip**: `.env` is in `.gitignore` — your secrets are safe.
 
 ---
 
 ## 🧠 How It Works
-
-1. `acwebhelper_watcher.exe` monitors for the VPN login window
-2. It injects your username/password like a ghost in the shell
-3. It spawns `totp.py`, gets your MFA token, injects that too
-4. It hits the final login button like a silent assassin
 
 Every action, every click, perfectly timed. No lag. No fail.
 
@@ -63,7 +59,7 @@ Every action, every click, perfectly timed. No lag. No fail.
 
 - Built by **The Machine** — a force of nature in IT and overclocking.
 - Designed to make *daily annoyances vanish* while flexing Python, pywinauto, and automation skills.
-- This is part of a **larger Madmen Tools ecosystem**, evolving into a full-blown X-for-Windows power app.
+- This is part of a **larger autom8edIT Tools ecosystem**, evolving into a full-blown X-for-Windows power app.
 - Pure violence against UX friction.
 
 ---
@@ -93,8 +89,8 @@ This tool is for legit use only — don't use it to bypass corporate security un
 ---
 
 ## 🧠 Author
-**The Machine / Arctic Overclockers**  
-GitHub: [@ArcticOverclockers](https://github.com/ArcticOverclockers)  
+**The Machine / autom8edIT**  
+GitHub: [@autom8edIT](https://github.com/autom8edIT)  
 "I didn't choose violence. Violence chose me."
 
 ---
@@ -107,7 +103,8 @@ GitHub: [@ArcticOverclockers](https://github.com/ArcticOverclockers)
 - Browser extension that identify any TOTP website and automatically insert the MFA code
 ---
 
-## 🔥 Madmen Motto
-> "Microsoft or Cisco didn’t authorize this. But you did."
+## 🔥 autom8ed Motto
+Don't just use tools, especially with default configs, let the tool become part of you!
+> "Microsoft nor Cisco authorized this. So I did, because not having it made my work way less efficient and made me go insane from enterng my creds nonstop."
 
 **Welcome to the end of login bloat.**
