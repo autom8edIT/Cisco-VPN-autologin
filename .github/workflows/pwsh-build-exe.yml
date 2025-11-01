@@ -10,21 +10,21 @@ jobs:
   build-exe:
     runs-on: windows-latest  # Use Windows for building .exe files
     
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+   steps:
+  - name: Checkout code
+    uses: actions/checkout@v3
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
+  - name: Set up Python
+    uses: actions/setup-python@v4
+    with:
       python-version: '3.11'
 
-    - name: Install dependencies
-      run: |
+  - name: Install dependencies
+    run: |
       pip install -r requirements.txt
-      shell: pwsh
+    shell: pwsh
 
-    - name: Build EXE
+  - name: Build EXE
     env:
       VPN_USERNAME: ${{ secrets.VPN_USERNAME }}
       VPN_PASSWORD: ${{ secrets.VPN_PASSWORD }}
@@ -34,8 +34,8 @@ jobs:
       pyinstaller --onefile totp.py
     shell: pwsh
 
-    - name: Move EXE to Safe Location
-      run: |
+  - name: Move EXE to Safe Location
+    run: |
       New-Item -ItemType Directory -Path .\compiled_exes -Force
       Move-Item -Path .\dist\totp.exe -Destination .\compiled_exes\my_private_totp.exe -Force
     shell: pwsh
