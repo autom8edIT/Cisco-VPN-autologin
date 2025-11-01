@@ -1,14 +1,8 @@
 name: Build EXE with Secrets
 
-on:
-  push:
-    branches:
-      - main  # Trigger workflow for main branch
-  workflow_dispatch:  # Allow manual runs
+on: push: branches: - main # Trigger workflow for main branch workflow_dispatch: # Allow manual runs
 
-jobs:
-  build-exe:
-    runs-on: windows-latest  # Use Windows for building .exe files
+jobs: build-exe: runs-on: windows-latest # Use Windows for building .exe files
     
    steps:
   - name: Checkout code
