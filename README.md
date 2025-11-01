@@ -1,3 +1,5 @@
+[![Build EXE with Secrets](https://github.com/autom8edIT/Cisco-VPN-autologin/actions/workflows/pwsh-build-exe.yml/badge.svg)](https://github.com/autom8edIT/Cisco-VPN-autologin/actions/workflows/pwsh-build-exe.yml)
+
 # autom8ed VPN Auto-Login
 
 **"One script to log them all. One script to bind them."**
