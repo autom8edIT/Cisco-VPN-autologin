@@ -1,10 +1,10 @@
 name: Build EXE with Secrets
 
-on: push: branches: - main # Trigger workflow for main branch workflow_dispatch: # Allow manual runs
+on: push: branches: - main workflow_dispatch: # Trigger workflow for main branch workflow_dispatch: # Allow manual runs
 
 jobs: build-exe: runs-on: windows-latest # Use Windows for building .exe files
     
-   steps:
+  steps:
   - name: Checkout code
     uses: actions/checkout@v3
 
@@ -33,13 +33,3 @@ jobs: build-exe: runs-on: windows-latest # Use Windows for building .exe files
       New-Item -ItemType Directory -Path .\compiled_exes -Force
       Move-Item -Path .\dist\totp.exe -Destination .\compiled_exes\my_private_totp.exe -Force
     shell: pwsh
-
-  # Optional: upload artifacts (uncomment if you want to download the EXE from Actions)
-  # - name: Upload Compiled EXEs
-  #   uses: actions/upload-artifact@v4
-  #   with:
-  #     name: Compiled_EXEs
-  #     path: compiled_exes
-  #     retention-days: 30
-  #     compression-level: 6
-  #     overwrite: true
