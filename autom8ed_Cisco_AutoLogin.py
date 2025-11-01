@@ -1,5 +1,5 @@
 # ================================
-# Madmen AutoLogin v4
+# autom8ed AutoLogin v4
 # ENV-Driven. UI-Sniping. TOTP-Cracking.
 # https://github.com/ArcticOverclockers/madmen-tools
 # ================================
