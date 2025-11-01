@@ -55,7 +55,7 @@ Every action, every click, perfectly timed. No lag. No fail.
 
 ---
 
-## 🌪️ Why It's Madmen
+## 🌪️ Why it's autom8ed? Because life is way too short to spend on repeating meaningless tasks over and over.
 
 - Built by **The Machine** — a force of nature in IT and overclocking.
 - Designed to make *daily annoyances vanish* while flexing Python, pywinauto, and automation skills.
