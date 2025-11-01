@@ -1,35 +1,51 @@
 name: Build EXE with Secrets
 
-on: push: branches: - main workflow_dispatch: # Trigger workflow for main branch workflow_dispatch: # Allow manual runs
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
-jobs: build-exe: runs-on: windows-latest # Use Windows for building .exe files
-    
-  steps:
-  - name: Checkout code
-    uses: actions/checkout@v3
+jobs:
+  build-exe:
+    runs-on: windows-latest
 
-  - name: Set up Python
-    uses: actions/setup-python@v4
-    with:
-      python-version: '3.11'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-  - name: Install dependencies
-    run: |
-      pip install -r requirements.txt
-    shell: pwsh
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
 
-  - name: Build EXE
-    env:
-      VPN_USERNAME: ${{ secrets.VPN_USERNAME }}
-      VPN_PASSWORD: ${{ secrets.VPN_PASSWORD }}
-      TOTP_SECRET: ${{ secrets.TOTP_SECRET }}
-    run: |
-      echo "Building EXE..."
-      pyinstaller --onefile totp.py
-    shell: pwsh
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+        shell: pwsh
 
-  - name: Move EXE to Safe Location
-    run: |
-      New-Item -ItemType Directory -Path .\compiled_exes -Force
-      Move-Item -Path .\dist\totp.exe -Destination .\compiled_exes\my_private_totp.exe -Force
-    shell: pwsh
+      - name: Build EXE
+        env:
+          VPN_USERNAME: ${{ secrets.VPN_USERNAME }}
+          VPN_PASSWORD: ${{ secrets.VPN_PASSWORD }}
+          TOTP_SECRET: ${{ secrets.TOTP_SECRET }}
+        run: |
+          echo "Building EXE..."
+          pyinstaller --onefile totp.py
+        shell: pwsh
+
+      - name: Move EXE to Safe Location
+        run: |
+          New-Item -ItemType Directory -Path .\compiled_exes -Force
+          Move-Item -Path .\dist\totp.exe -Destination .\compiled_exes\my_private_totp.exe -Force
+        shell: pwsh
+
+      # Optional: upload artifacts (uncomment if you want to download the EXE from Actions)
+      # - name: Upload Compiled EXEs
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: Compiled_EXEs
+      #     path: compiled_exes
+      #     retention-days: 30
+      #     compression-level: 6
+      #     overwrite: true
