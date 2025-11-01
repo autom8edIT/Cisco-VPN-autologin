@@ -1,7 +1,7 @@
 # ================================
 # autom8ed AutoLogin v4
 # ENV-Driven. UI-Sniping. TOTP-Cracking.
-# https://github.com/ArcticOverclockers/madmen-tools
+# https://github.com/autom8edIT
 # ================================
 
 from pywinauto.application import Application
