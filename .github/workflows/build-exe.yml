@@ -21,24 +21,24 @@ jobs:
         with:
           python-version: 3.11
 
-      # Step 3: Install Python dependencies
-      - name: Install Dependencies
-        run: pip install -r requirements.txt
-
-      # Step 4: Build the EXE
+      # Step 3: Build the EXE
       - name: Build EXE
         env:  # Pass secrets as environment variables
           VPN_USERNAME: ${{ secrets.VPN_USERNAME }}
           VPN_PASSWORD: ${{ secrets.VPN_PASSWORD }}
           TOTP_SECRET: ${{ secrets.TOTP_SECRET }}
         run: |
+          echo "Installing dependencies..."
+          pip install -r requirements.txt
           echo "Building EXE..."
           pyinstaller --onefile totp.py
+        shell: pwsh
 
-      # Step 5: Save the EXE in the Repository (Private)
+      # Step 4: Save the EXE in the Repository (Private)
       - name: Move EXE to Safe Location
         run: |
-          mkdir -p compiled_exes
-          move dist\\totp.exe compiled_exes\\my_private_totp.exe
+          New-Item -ItemType Directory -Path .\compiled_exes -Force
+          Move-Item -Path .\dist\totp.exe -Destination .\compiled_exes\my_private_totp.exe -Force
+        shell: pwsh
 
       # Optional: Restrict write access in repo to trusted collaborators
