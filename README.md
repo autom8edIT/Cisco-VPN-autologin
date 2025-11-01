@@ -1,8 +1,8 @@
-# 💣 Madmen VPN Auto-Login
+# autom8ed VPN Auto-Login
 
 **"One script to log them all. One script to bind them."**
 
-Welcome to **Madmen VPN Auto-Login**, your new digital mercenary against Cisco's login bloat. Tired of logging in manually like it's 2007? This is your fully automated, keypress-simulating, token-smuggling, rage-fueled revenge on corporate UX.
+Welcome to **autom8ed VPN Auto-Login**, your new digital mercenary against Cisco's login bloat. Tired of logging in manually like it's 2007? This is your fully automated, keypress-simulating, token-smuggling, rage-fueled revenge on corporate UX.
 
 ---
 
@@ -41,8 +41,8 @@ In the root folder, add your creds/secrets:
 VPN_USERNAME=your_username
 VPN_PASSWORD=your_password
 TOTP_SECRET=your_base32_totp_secret
-TOTP_SCRIPT_PATH=C:\Tools\Madmen\Bin\totp.py
-LOG_PATH=C:\Tools\Madmen\Logs\vpn_auto_login.log
+TOTP_SCRIPT_PATH=C:\Tools\autom8ed\Bin\totp.py
+LOG_PATH=C:\Tools\autom8ed\Logs\vpn_auto_login.log
 ```
 > 🔐 **Pro Tip**: `.env` is in `.gitignore` — your secrets are safe.
 
