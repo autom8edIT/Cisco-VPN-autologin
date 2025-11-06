@@ -4,7 +4,7 @@
 
 **"One script to log them all. One script to bind them."**
 
-Welcome to **autom8ed Cisco "Secure" VPN Auto-Login**, the way it should be, fuilly autom8ed!
+Welcome to **autom8ed Cisco "Secure" VPN Auto-Login**, the way it should be, fully autom8ed!
 
 Who hasn't been tired of logging in manually forever? Like it's 2007? This is your fully autom8ed, keypress-simulating, token-smuggling, rage-fueled revenge on corporate UX.
 
