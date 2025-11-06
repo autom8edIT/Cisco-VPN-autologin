@@ -4,7 +4,9 @@
 
 **"One script to log them all. One script to bind them."**
 
-Welcome to **autom8ed VPN Auto-Login**, your new digital mercenary against Cisco's login bloat. Tired of logging in manually like it's 2007? This is your fully automated, keypress-simulating, token-smuggling, rage-fueled revenge on corporate UX.
+Welcome to **autom8ed Cisco "Secure" VPN Auto-Login**, the way it should be, fuilly autom8ed!
+
+Who hasn't been tired of logging in manually forever? Like it's 2007? This is your fully autom8ed, keypress-simulating, token-smuggling, rage-fueled revenge on corporate UX.
 
 ---
 
@@ -61,7 +63,7 @@ Every action, every click, perfectly timed. No lag. No fail.
 
 - Built by **The Machine** — a force of nature in IT and overclocking.
 - Designed to make *daily annoyances vanish* while flexing Python, pywinauto, and automation skills.
-- This is part of a **larger autom8edIT Tools ecosystem**, evolving into a full-blown X-for-Windows power app.
+- This is part of a **larger autom8edIT Tools ecosystem**, evolving into a full-blown fix anything and everything for Windows.
 - Pure violence against UX friction.
 
 ---
@@ -93,7 +95,7 @@ This tool is for legit use only — don't use it to bypass corporate security un
 ## 🧠 Author
 **The Machine / autom8edIT**  
 GitHub: [@autom8edIT](https://github.com/autom8edIT)  
-"I didn't choose violence. Violence chose me."
+"I didn't choose to be bypassing every roadblock. THey got setup to challenge me."
 
 ---
 
@@ -101,12 +103,12 @@ GitHub: [@autom8edIT](https://github.com/autom8edIT)
 - GUI launcher version
 - Logging dashboard with stats
 - Self-update system
-- Full integration into Madmen X Platform
-- Browser extension that identify any TOTP website and automatically insert the MFA code
+- Full integration into autom8ed services.
+- Further evolve the browser extension so it can identify any TOTP website and automatically inject the MFA code. Plus make it possible to tweak the UI to your preference.
 ---
 
 ## 🔥 autom8ed Motto
-Don't just use tools, especially with default configs, let the tool become part of you!
-> "Microsoft nor Cisco authorized this. So I did, because not having it made my work way less efficient and made me go insane from enterng my creds nonstop."
+Don't just use tools, especially any default configs, master the tool and let it just be an extension of you!
+> Microsoft nor Cisco authorized this. So I did, because not having it made my work way less efficient and made me go insane from enterng my creds nonstop.
 
-**Welcome to the end of login bloat.**
+**Welcome to the end of manual login.**
