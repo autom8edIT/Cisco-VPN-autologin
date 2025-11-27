@@ -30,7 +30,7 @@ Mad props, tried to make the same tool myself then found this gem by accident an
 
 ### 1. Clone the Repo
 ```bash
-git clone git@github.com:autom8edIT/csc-autologin.git
+git clone git@github.com:autom8edIT/Cisco-VPN-autologin.git
 cd csc-autologin
 ```
 
