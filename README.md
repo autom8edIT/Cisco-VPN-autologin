@@ -95,7 +95,7 @@ This tool is for legit use only — don't use it to bypass corporate security un
 ## 🧠 Author
 **The Machine / autom8edIT**  
 GitHub: [@autom8edIT](https://github.com/autom8edIT)  
-"I didn't choose to be bypassing every roadblock. THey got setup to challenge me."
+"I didn't choose to be bypassing every roadblock. They got setup to challenge me."
 
 ---
 
