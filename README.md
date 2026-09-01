@@ -1,4 +1,4 @@
-[![Build EXE with Secrets](https://github.com/autom8edIT/Cisco-VPN-autologin/actions/workflows/pwsh-build-exe.yml/badge.svg)](https://github.com/autom8edIT/Cisco-VPN-autologin/actions/workflows/pwsh-build-exe.yml)
+[![Build EXE with Secrets](https://github.com/usrname1git/Cisco-VPN-autologin/actions/workflows/pwsh-build-exe.yml/badge.svg)](https://github.com/usrname1git/Cisco-VPN-autologin/actions/workflows/pwsh-build-exe.yml)
 
 # autom8ed VPN Auto-Login
 
@@ -30,7 +30,7 @@ Mad props, tried to make the same tool myself then found this gem by accident an
 
 ### 1. Clone the Repo
 ```bash
-git clone git@github.com:autom8edIT/Cisco-VPN-autologin.git
+git clone git@github.com:usrname1git/Cisco-VPN-autologin.git
 cd csc-autologin
 ```
 
@@ -63,7 +63,7 @@ Every action, every click, perfectly timed. No lag. No fail.
 
 - Built by **The Machine** — a force of nature in IT and overclocking.
 - Designed to make *daily annoyances vanish* while flexing Python, pywinauto, and automation skills.
-- This is part of a **larger autom8edIT Tools ecosystem**, evolving into a full-blown fix anything and everything for Windows.
+- This repository is maintained as part of my personal Windows automation lab.
 - Pure violence against UX friction.
 
 ---
@@ -93,8 +93,8 @@ This tool is for legit use only — don't use it to bypass corporate security un
 ---
 
 ## 🧠 Author
-**The Machine / autom8edIT**  
-GitHub: [@autom8edIT](https://github.com/autom8edIT)  
+**Joel Larsson**  
+GitHub: [@usrname1git](https://github.com/usrname1git)
 "I didn't choose to be bypassing every roadblock. They got setup to challenge me."
 
 ---
